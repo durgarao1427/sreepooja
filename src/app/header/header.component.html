@@ -1,0 +1,48 @@
+ <nav class="navbar" >
+  <div class="container-fluid">
+    <div class="navbar-header col-sm-7">
+      <a class="navbar-brand"   [routerLink]="['home']"><img  src="../assets/images/1.png/"></a>
+    </div>
+    <ul class="nav navbar-nav nav-list">
+        <li class="active"><a [routerLink]="['home']" href="#">Home</a></li>
+        <li class="dropdown">
+            <a [routerLink]="['Poojas']" class="dropdown-toggle" data-toggle="dropdown" href="#">Pujas
+            <span class="caret"></span></a>
+            
+            <ul class="dropdown-menu col-sm-6">
+              <a  [routerLink]="['poojacategory']"><h3 style="font-size:25px; color:lightskyblue">
+                  All categories</h3></a>
+                  <hr size="10">
+              <li>
+                <a href="#"><img src="../assets/images/2.jpg/" width="220px" height="300px" style="left:190px; top:-67px; position:relative"></a></li>
+              <div class="sl">
+              <li><a [routerLink]="['allpoojacategory/1']">Festival Poojas</a></li>
+              <li><a [routerLink]="['allpoojacategory/2']">Life Steps</a></li>
+              <li><a [routerLink]="['allpoojacategory/3']">Occasional Poojas</a></li>
+              <li><a [routerLink]="['allpoojacategory/4']">Special Poojas</a>
+              </div>
+            </ul>
+            
+          </li>
+
+          <!-- <ul class="nav navbar-nav ">
+              <li class="dropdown">
+                  <a [routerLink]="['puja']" class="dropdown-toggle" data-toggle="dropdown" href="#">Punyakhestram
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu col-sm-6">
+                      <li><a href="#" style="font-size:25px; color:lightskyblue">All Categories</a><hr></li>
+                      
+                    <li><a href="#"><img src="../assets/images/p6.8c4e49a2.jpg/" width="220px" height="300px" style="left:190px; top:-67px; position:relative"></a></li>
+                    <div class="sl">
+                    <li><a [routerLink]="['river']">River</a></li>
+                    <li><a [routerLink]="['shaktipeetam']">Shakthi Pettam</a></li>
+                    </div>
+                  </ul>
+                </li>
+                </ul> -->
+                <li class="active"><a [routerLink]="['contact']">Contact</a></li>
+                <!-- <li><a [routerLink]="['registration']">Registration</a></li> -->
+                <!-- <li class="active"><a [routerLink]="['login']">login</a></li> -->
+    </ul>
+  </div>
+</nav>

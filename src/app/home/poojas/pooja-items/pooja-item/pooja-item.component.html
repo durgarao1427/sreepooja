@@ -1,0 +1,17 @@
+<div>
+    <img width='250px' height="400px" src="{{item.imagepath}}"/>
+
+  </div>
+
+  <div>
+    <h4>  {{item.heading}}</h4>
+  </div>
+  <div>
+      <p class="size ng-binding">
+        {{item.smalldesc}}</p>
+  </div>
+  <div  class='buttons' >
+    <button class="btn btn-danger" (click)="getpoojadetails(item.id)">Pooja Details</button>
+
+    <button class="btn btn-danger book-now" (click)="booknow(item.bookingid)">Book Now</button>
+

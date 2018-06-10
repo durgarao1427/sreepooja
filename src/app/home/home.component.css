@@ -1,0 +1,48 @@
+.first{
+    border:1px solid;
+    height:570px;
+    width:310px;
+}
+.second{
+    border:1px solid;
+    height:400px;
+    width:310px;
+}
+.third{
+    border:1px solid;
+    height:400px;
+    width:310px;
+}
+.fourth{
+    border:1px solid;
+    height:400px;
+    width:310px;
+}
+div{
+    margin:10px;
+}
+.subfirst-1{
+    border:1px solid;
+    height:300px;
+    width:270px;
+}
+.subfirst-2{
+    border:1px solid;
+    height:100px;
+    width:270px;
+}
+.subfirst-3{
+    border:1px solid;
+    height:100px;
+    width:270px;
+}
+.subfirst-3-1{
+    border:1px solid;
+    height:80px;
+    width:90px;
+}
+.subfirst-3-2{
+    border:1px solid;
+    height:80px;
+    width:90px;
+}

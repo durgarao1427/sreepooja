@@ -1,0 +1,80 @@
+<!-- <div class="container">
+    <div class="row col-sm-4"></div>
+    <div class="row col-sm-4">
+  
+      <form action="" (ngSubmit)="login(y)" #y='ngForm'>
+        <div class="form-group" >
+          <label for="email">Username:</label>
+          <input type="email" class="form-control" id="username"  name="username" placeholder="Enter email" ngModel required/>
+          <div *ngIf="loginclick && y.form.controls.username.invalid">please enter valid userid</div>
+        </div>
+         <div class="form-group">
+          <label for="Name">Password:</label>
+          <input type="password" class="form-control" id="Name" placeholder="Enter password" name="password" ngModel required/>
+       <div *ngIf="loginclick && y.form.controls.password.invalid">please enter valid password</div>
+        </div>
+       
+      <button type="submit" class="btn btn-info" >login</button>
+    </form>
+  </div>
+  <div class="row col-sm-4 " ></div>
+  </div>
+  
+   -->
+   <div class='container'>
+    <div class='form1'>
+      <form (ngSubmit)="login(y)" #y='ngForm'>
+        <div class='form-header'>
+          <h2>Login</h2>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="glyphicon glyphicon-user"></i>
+          </span>
+          <input id="email" type="text" class="form-control" name="email" placeholder="Email" ngModel required/>
+          <div *ngIf="loginclick && y.form.controls.email.invalid" style="color:red">please enter valid userid</div>
+        
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="glyphicon glyphicon-lock"></i>
+          </span>
+          <input id="password" type="password" class="form-control" name="password" placeholder="Password" ngModel required/>
+          <div *ngIf="loginclick && y.form.controls.password.invalid" style="color:red">please enter valid password</div>
+      
+        </div>
+        <div class="input-group">
+          <div *ngIf="loginclick && usernotfound" style="color:red">{{login_errors}}</div>
+          <button type="submit" class='btn btn-warning '>Submit</button>
+        </div>
+        <div class='footers'>
+          <div class='col-sm-8'>
+            <h5 [routerLink]="['../forgot']"> 
+              forgot password?
+            </h5>
+          </div>
+          <div class='col-sm-4 pull-right'>
+            <h5 [routerLink]="['../registration']">
+              rigister here
+            </h5>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
